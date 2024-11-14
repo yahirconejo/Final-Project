@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/faq.css">
+</head>
+<body>
+    <div id="navBar">
+        <button class="item" id="videoButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Videos Page!</button>
+        <button class="item" id="picButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Pictures Page!</button>
+        <button class="item" id="aboutButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">About Page!</button>
+        <button class="item" id="questionButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Questions Page!</button>
+    </div>
+    <h1>Frequently asked questions!</h1>
+    <ol>
+        <li><a href="#q1">What is Better Call Saul about?</a></li>
+        <li><a href="#q2">Is this show as action packed as Breaking Bad?</a></li>
+        <li><a href="#q3">Do I need to watch Breaking Bad before this show?</a></li>
+        <li><a href="#q4">Does this show contain accurate court scenes?</a></li>
+        <li><a href="#q5">Are there a lot of characters?</a></li>
+        <li><a href="#q6">Is this show for kids?</a></li>
+        <li><a href="#q7">How many seasons are there in Btter Call Saul?</a></li>
+        <li><a href="#q8">Are the female characters interesting?</a></li>
+        <li><a href="#q9">Are there any unlikeable characters?</a></li>
+        <li><a href="#q10">Is this a drug show like Breaking Bad?</a></li>
+    </ol>
+
+    <h1>What is Better Call Saul about?</h1>
+    <p id="q1">Better Call Saul is a spin off prequel to the hit series Breaking Bad which follows one "Jimmy Mcgill," a former con who is clawing his way to the top to gain respect as a public defender.</p>
+
+    <h1>Is this show as action packed as Breaking Bad?</h1>
+    <p id="q2">A common reason people like to drop the show early on is because this show is much more focused on developing the characters and their clashes v.s. straight forward action like Breaking Bad, but generally the early seasons are slower and the action picks up later in the show.</p>
+    
+    <h1>Do I need to watch Breaking Bad before this show?</h1>
+    <p id="q3">It is reccommended to watch Breaking Bad before this show, but it is certainly not required as this show works really well seperate from the series and until the final season doesn't really need too much knowledge from Breaking Bad to watch this show</p>
+    
+    <h1>Does this show contain accurate court scenes?</h1>
+    <p id="q4">As is typical with shows that contain court scenes they certainly embelish a lot to make these scenes more interesting and generally the scenes won't be 100% accurate, but this show does do pretty well most of the time on its acuracy</p>
+
+    <h1>Are there a lot of characters?</h1>
+    <p id="q5">Yes! Better Call Saul contains a large variety of very good characters and you're almost guaranteed to find a character you love.</p>
+
+    <h1>Is this show for kids?</h1>
+    <p id="q6">Generally this show is a bit too violent and a bit too suggestive for kids to be able to watch. The show certainly isn't a gore or nasty fest but it isn't completely safe.</p>
+
+    <h1>How many seasons are there in Btter Call Saul?</h1>
+    <p id="q7">Btter Call Saul has 6 seasons of some of the best quality T.V. I've ever watched</p>
+
+    <h1>Are the female characters interesting?</h1>
+    <p id="q8">A lot of shows can easily fall into having boring female characters whose only roll is to be a goal for the main character to chase. This show I believe does a pretty good job of avoiding this situation as the main love interest takes a lot of oppurtunies to rather focus on herself over Jimmy and she is a very complex character that gets lots of her own development apart from Jimmy.</p>
+
+    <h1>Are there any unlikeable characters?</h1>
+    <p id="q9">If you have watched Breaking Bad you'll know that when that show doesn't want you to like a character they do a very good job at making that character unlikeable. Watching this show you can tell that Vince grew in his writing and is able to add a little more complexity in his characters like at the end of Breaking Bad.</p>
+
+    <h1>Is this a drug show like Breaking Bad?</h1>
+    <p id="q10">Better Call Saul is has essentially no mention of drugs for the entire show and is much more focused on Jimmy's roll in the world and a lot of his schemes are entirely seperate. The show does contain some elements of it obviously due to its connection with Breaking Bad but it is not the focus of the show.</p>
+
+    <script>
+        var aboutBtn = document.getElementById("aboutButton");
+        var picBtn = document.getElementById("picButton");
+        var vidBtn = document.getElementById("videoButton");
+        var questionBtn = document.getElementById("questionButton");
+
+        aboutBtn.addEventListener("click", function() {
+            window.location.href = "about.html";
+        });
+        picBtn.addEventListener("click", function() {
+            window.location.href = "pictures.html";
+        });
+        vidBtn.addEventListener("click", function() {
+            window.location.href = "video.html";
+        });
+        questionBtn.addEventListener("click", function() {
+            window.location.href = "questions.html";
+        });
+    </script>
+</body>
+</html>

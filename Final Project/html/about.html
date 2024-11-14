@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    <div id="navBar">
+        <button class="item" id="videoButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Videos Page!</button>
+        <button class="item" id="picButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Pictures Page!</button>
+        <button class="item" id="faqButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">FAQ Page!</button>
+        <button class="item" id="questionButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Questions Page!</button>
+    </div>
+    <div><h1>About Better Call Saul!</h1></div>
+    <ul id="list">
+        <li class="listItem">James or "Jimmy" is the main character</li>
+        <li>His love intersest Kim Wexler</li>
+        <li class="listItem">His enemy in disguise, his brother Chuck</li>
+        <li>The standard anatagonist Lalo Salamanca</li>
+    </ul>
+    <p id="info">
+        Better Call Saul is a spin off prequel to the hit series Breaking Bad which follows one "Jimmy Mcgill," a former con who is clawing his way to the top to gain respect as a public defender.
+    </p>
+    <p>
+        Better Call Saul is one of if not my faorite tv show of all time.
+        It has some of the most intriguing stories I have ever watched and it contains some of my favorite characters.
+        The story of a charming young struggling public defender who gets into trouble with the law is a beatuiful tradgedy.
+    </p>
+    <img src="../pics/bcs.jpg" alt="Better Call Saul poster" width="200px">
+    <script>
+        var vidBtn = document.getElementById("videoButton");
+        var picBtn = document.getElementById("picButton");
+        var faqBtn = document.getElementById("faqButton");
+        var questionBtn = document.getElementById("questionButton");
+
+        vidBtn.addEventListener("click", function() {
+            window.location.href = "video.html";
+        });
+        picBtn.addEventListener("click", function() {
+            window.location.href = "pictures.html";
+        });
+        faqBtn.addEventListener("click", function() {
+            window.location.href = "faq.html";
+        });
+        questionBtn.addEventListener("click", function() {
+            window.location.href = "questions.html";
+        });
+    </script>
+</body>
+</html>

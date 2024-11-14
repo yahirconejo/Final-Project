@@ -1,0 +1,41 @@
+body {
+    height: 100%;
+    background-color: pink;
+}
+
+html {
+    height: 85%;
+}
+
+#title {
+    font-size: 4em;
+    font-family: fantasy;
+    text-align: center;
+}
+
+h1 {
+    color: hotpink;
+}
+
+#box {
+    display: flex;
+    border: 3px solid black;
+    margin: 15px;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: fantasy;
+}
+
+.item {
+    border: 2px solid black;
+    width: 200px;
+    height: 25px;
+}
+
+#loginButton {
+    margin-top: 15px;
+    font-family: fantasy;
+}

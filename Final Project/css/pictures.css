@@ -1,0 +1,85 @@
+body {
+    background-color: pink;
+}
+
+#navBar{
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    gap: 10px;
+    border-bottom: 4px solid hotpink;
+}
+
+.item{
+    left: 0;
+    top: 0;
+    border: 4px solid hotpink;
+    border-bottom: none;
+    height: 50px;
+}
+
+p {
+    color: hotpink;
+}
+
+#heading {
+    text-align: center;
+    color: hotpink;
+}
+
+#section1 {
+    position: relative;
+    width: 600px;
+    top: 50px;
+    padding-bottom: 20px;
+    
+}
+
+#pic1 {
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#p1 {
+    position: sticky;
+    top: 10px;
+    visibility: hidden;
+}
+
+#section2 {
+    padding-bottom: 60px;
+    position: relative;
+    width: 600px;
+    top: 50px;
+}
+
+#pic2 {
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#p2 {
+    top: 30px;
+    visibility: hidden;
+}
+
+#section3 {
+    position: relative;
+    top: 50px;
+    width: 600px;
+}
+
+#pic3 {
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#p3 {
+    position: auto;
+    top: 10px;
+    visibility: hidden;
+}

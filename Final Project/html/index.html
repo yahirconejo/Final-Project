@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div id="title">
+        Login Here! 
+    </div>
+    <div id="box">
+        <div id="usernameBox">
+            Username
+            <div>
+                <input id="usernameInput" class="item" type="text">
+            </div>
+        </div>
+        <br>
+        <div id="passwordBox">
+            Password
+            <div>
+                <input  id="passwordInput" class="item" type="password">
+            </div>
+        </div>
+        <div>
+            <button id="loginButton" type="button">Login!</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("loginButton").addEventListener("click", function() {
+            if(document.getElementById("usernameInput").value == "username" && document.getElementById("passwordInput").value == "password"){
+                window.location.href = "about.html";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/video.css">
+</head>
+<body>
+    <div id="navBar">
+        <button class="item" id="aboutButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">About Page!</button>
+        <button class="item" id="picButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Pictures Page!</button>
+        <button class="item" id="faqButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">FAQ Page!</button>
+        <button class="item" id="questionButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Questions Page!</button>
+    </div>
+    <h1>Cool Video Selector!</h1>
+    <div id="buttonBox">
+        <label for="videos">Select a video</label>
+        <select name="videos" id="videos" onchange="change()">
+            <option value="video1">Trailer</option>
+            <option value="video2">Highlights</option>
+            <option value="video3">My fav scene</option>
+        </select>
+        <br>
+        <iframe id="video3" width="400px" height="200px" src="https://www.youtube.com/embed/N723si1wAG8" title="&quot;Come On, Take My Gun From Me&quot; | Pimento | Better Call Saul" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe id="video2" width="400px" height="200px" src="https://www.youtube.com/embed/P0Gl0Sd7K3k" title="Better Call Saul | Best Moments" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe id="video1" width="400px" height="200px" src="https://www.youtube.com/embed/PjElOuIECdE" title="Better Call Saul - Full Series Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <script src="../js/video.js"></script>
+    <script>
+        var aboutBtn = document.getElementById("aboutButton");
+        var picBtn = document.getElementById("picButton");
+        var faqBtn = document.getElementById("faqButton");
+        var questionBtn = document.getElementById("questionButton");
+
+        aboutBtn.addEventListener("click", function() {
+            window.location.href = "about.html";
+        });
+        picBtn.addEventListener("click", function() {
+            window.location.href = "pictures.html";
+        });
+        faqBtn.addEventListener("click", function() {
+            window.location.href = "faq.html";
+        });
+        questionBtn.addEventListener("click", function() {
+            window.location.href = "questions.html";
+        });
+    </script>
+</body>
+</html>

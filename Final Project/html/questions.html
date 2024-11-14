@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/questions.css">
+</head>
+<body>
+    <div id="navBar">
+        <button class="item" id="videoButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Videos Page!</button>
+        <button class="item" id="picButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Pictures Page!</button>
+        <button class="item" id="aboutButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">About Page!</button>
+        <button class="item" id="faqButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">FAQ Page!</button>
+    </div>
+    
+    <h1>Questions!</h1>
+    <input type="text" id="textBox">
+    <br>
+    <button type="button" id="search" style="margin-top: 10px;">Search!</button>
+    <div id="cool">
+
+    </div>
+    
+    <script>
+        var aboutBtn = document.getElementById("aboutButton");
+        var picBtn = document.getElementById("picButton");
+        var faqBtn = document.getElementById("faqButton");
+        var vidBtn = document.getElementById("videoButton");
+
+        aboutBtn.addEventListener("click", function() {
+            window.location.href = "about.html";
+        });
+        picBtn.addEventListener("click", function() {
+            window.location.href = "pictures.html";
+        });
+        faqBtn.addEventListener("click", function() {
+            window.location.href = "faq.html";
+        });
+        vidBtn.addEventListener("click", function() {
+            window.location.href = "video.html";
+        });
+
+        var button = document.getElementById("search");
+        var box = document.getElementById("textBox");
+        var reg1 = new RegExp("saul*");
+        var reg2 = new RegExp("kim*");
+        var reg3 = new RegExp("lalo*");
+        var cool = document.getElementById("cool");
+
+        button.addEventListener("click", function() {
+            if(reg1.toLowerCase().test(box.value.toLowerCase())) {
+                var s = document.createElement("h3");
+                s.innerHTML = "Saul is a brilliant main character, packed full of energy and ready to do anything to get ahead. His quick wits and charm makes him seem very likeable at first and then you end up rooting against him and his vast amount of mistakes that he makes in life and this is perfectly summed up with hopw the show ends(ifykyk)";
+                cool.appendChild(s)
+            } else if(reg2.toLowerCase().test(box.value.toLowerCase())) {
+                var f = document.createElement("h3");
+                f.innerHTML = "Kim is a wonderfully crafted character who goes down a spiral of trying to figue out what she wants in the world while essentially being dragged down by Saul's self destrucitve habits.";
+                cool.appendChild(f);
+            } else if(reg3.toLowerCase().test(box.value.toLowerCase())) {
+                var l = document.createElement("h3");
+                l.innerHTML = "Lalo is a very threatening presence in the show and provides the catalyst for Saul to abandon his attempts to become an upstanding lawyer and his begining towards the end. Lalo puts together what the viewer could only feel in Breaking Bad, which is the power of the name 'Salamanca.'";
+                cool.appendChild(l);
+            } else {
+                var e = document.createElement("h3");
+                e.innerHTML = "Sorry, we don't have information on this person.";
+                cool.appendChild(e);
+            }
+        });
+    </script>
+</body>
+</html>

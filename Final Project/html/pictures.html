@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/pictures.css">
+</head>
+<body>
+    <div id="navBar">
+        <button class="item" id="videoButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Videos Page!</button>
+        <button class="item" id="aboutButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">About Page!</button>
+        <button class="item" id="faqButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">FAQ Page!</button>
+        <button class="item" id="questionButton" type="button" style="margin-top: 10px; background-color: pink; cursor: pointer;">Questions Page!</button>
+    </div>
+
+    <div id="heading">
+        <h1>Better Call Saul Pictures!</h1>
+    </div>
+    <div id="section1">
+        <div id="pic1">
+            <img src="../pics/saulDefending.jpg" alt="saul defending lalo in court" width="350px">
+        </div>
+        <div id="p1">
+            <p>
+                This image is showing Saul, the mc, defending his client at the time and soon to be antoginistic character Lalo Salamanca. In this scene it was Saul doing his best to get Lalo out on bail so that Lalo could enaact his plan to flee back to Mexico. This can be marked as a pivotal moment for Saul's charatcer as he gains $100,000 for this and he becomes a "Friend of the cartel."
+            </p>
+        </div>
+    </div>
+    <div id="section2">
+        <div id="pic2">
+            <img src="../pics/desertScene.webp" alt="mike and saul stuck out in the desert" width="350px">
+        </div>
+        <div id="p2">
+            <p>
+                This image is showing the characters Mike and Saul stranded in the desert. This scene occured when Saul was sent out to the desert to procure Lalo's bail of 7 Million. After being attacked by hired gunman he was saved by Mike and they were stranded in the desert without any water for a day and a half
+            </p>
+        </div>
+    </div>
+    <div id="section3">
+        <div id="pic3">
+            <img src="../pics/bcsHoward.avif" alt="lalo salamanca standin behind howard hamlin in saul and kims appartment" width="350px">
+        </div>
+        <div id="p3">
+            <p>
+                In this scene Howard believes that he has finally figured out Saul and Kim's plan to ruin his reputation in order to get the Sandpiper case settled. However, this takes a very large turning point from Howard losing his mind over Saul and Kim's schemes to total fear with the entering of Lalo into their appartment.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var pic1 = document.getElementById("pic1");
+        var pic2 = document.getElementById("pic2");
+        var pic3 = document.getElementById("pic3");
+
+        pic1.addEventListener("click", function() {
+            document.getElementById("p1").style.visibility = "visible";
+            pic1.style.cursor = "default";
+        });
+        pic2.addEventListener("click", function() {
+            document.getElementById("p2").style.visibility = "visible";
+            pic2.style.cursor = "default";
+        });
+        pic3.addEventListener("click", function() {
+            document.getElementById("p3").style.visibility = "visible";
+            pic3.style.cursor = "default";
+        });
+
+        var aboutBtn = document.getElementById("aboutButton");
+        var vidBtn = document.getElementById("videoButton");
+        var faqBtn = document.getElementById("faqButton");
+        var questionBtn = document.getElementById("questionButton");
+
+        aboutBtn.addEventListener("click", function() {
+            window.location.href = "about.html";
+        });
+        vidBtn.addEventListener("click", function() {
+            window.location.href = "video.html";
+        });
+        faqBtn.addEventListener("click", function() {
+            window.location.href = "faq.html";
+        });
+        questionBtn.addEventListener("click", function() {
+            window.location.href = "questions.html";
+        });
+    </script>
+</body>
+</html>
